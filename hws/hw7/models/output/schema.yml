@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: session_summary
+    description: "Analytics model for session data"
+    columns:
+      - name: sessionId
+        description: "Unique identifier for each stock price record"
+        tests:
+          - unique
+          - not_null
+

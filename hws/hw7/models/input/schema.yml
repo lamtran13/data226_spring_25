@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_LEOPARD
+    schema: raw
+    description: "Schema which stores raw tables (ETL)"
+    tables:
+      - name: user_session_channel
+        identifier: user_session_channel
+        description: "Session data including userId, sessionId, and channel"
+      - name: session_timestamp
+        identifier: session_timestamp
+        description: "Session data including timestamp"
